@@ -6,7 +6,13 @@ import DrawingApp from "./DrawingApp";
 const Tabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0); // Initial active tab index
 
-  const tabLabels = ["HTML", "React", "Vue", "Angular", "Svelte"];
+  const tabLabels = [
+    "Notes",
+    "Todos",
+    "Drawing",
+    "Yet to come 1",
+    "Yet to come 2",
+  ];
 
   const handleTabClick = (index: number) => {
     setActiveTab(index);
