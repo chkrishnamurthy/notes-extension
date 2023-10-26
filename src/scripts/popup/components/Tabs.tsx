@@ -6,13 +6,7 @@ import DrawingApp from "./DrawingApp";
 const Tabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0); // Initial active tab index
 
-  const tabLabels = [
-    "Notes",
-    "Todos",
-    "Drawing",
-    "Yet to come 1",
-    "Yet to come 2",
-  ];
+  const tabLabels = ["Notes", "Todos", "Drawing", "2048", "Yet to come 1"];
 
   const handleTabClick = (index: number) => {
     setActiveTab(index);
@@ -50,8 +44,8 @@ const Tabs: React.FC = () => {
         {activeTab === 0 && <Notes />}
         {activeTab === 1 && <Todo />}
         {activeTab === 2 && <DrawingApp />}
-        {activeTab === 3 && <div>Angular content goes here</div>}
-        {activeTab === 4 && <div>Svelte content goes here</div>}
+        {activeTab === 3 && <div>2048 Game come here</div>}
+        {activeTab === 4 && <div>Yet to decide</div>}
       </div>
     </div>
   );
